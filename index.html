@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Felipe - Bootstrap 5 </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="img/grafizlogo.png">
+</head>
+
+<body>
+
+    <div class="container-fluid position-relative d-flex p-0">
+
+
+
+        <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+                <img class="img-loader" src="img/icono.png" alt="Loading...">
+            </div>
+        </div>
+        
+
+        <div id="video-background">
+            <video autoplay muted loop id="myVideo">
+                <source src="video/fondo.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+
+
+        <!-- Sidebar Start -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                    <h3 class="text-primary"> <span class="gz">Mi </span><span class="gz1">portafolio</span>  </h3>
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="ms-3">
+                        <h6 class="mb-0">Felipe Pulido</h6>
+                        <span>Mi Portafolio</span>
+                    </div>
+                </div>
+
+                <a class="sidebar-toggler flex-shrink-0" href="xxx"><div class="center-images animated-image1">
+                    <img class="img-iconos4 center-images animated-image4" src="img/arrow-1.png" alt="Imagen 1">
+                </div></a>
+
+
+                <div class="navbar-nav w-100">
+                    <a href="index.html" class="nav-item nav-link active"><img class="img-iconos4" src="img/inicio-1.png" alt="Imagen 1">Inicio</a>
+                    <a href="widget.html" class="nav-item nav-link"><img class="img-iconos4" src="img/portafolio-1.png" alt="Imagen 1"> Mi Marca </a>
+                    <a href="form.html" class="nav-item nav-link"><img class="img-iconos4" src="img/blog.png" alt="Imagen 1"> Blog</a>
+
+                </div>
+            </nav>
+        </div>
+        <!-- Sidebar End -->
+
+
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+                
+                <a href="#" class="sidebar-toggler flex-shrink-0">
+                    <i class="fa fa-bars"></i>
+                </a> <br><br>
+               
+                <div class="navbar-nav align-items-center ms-auto">
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto">
+                            
+                            <a href="#home" class="nav-item nav-link active"> <img class="img-iconos1" src="img/home.png" alt="Imagen 1"> <p class="d-none d-lg-inline-flex">Inicio</p></a>
+                            <a href="#acercademi" class="nav-item nav-link"> <img class="img-iconos1" src="img/acercademi.png" alt="Imagen 1"><p class="d-none d-lg-inline-flex">Acerca de</p></a>
+                            <a href="#skills" class="nav-item nav-link"><img class="img-iconos1" src="img/skills.png" alt="Imagen 1"> <p class="d-none d-lg-inline-flex">skills</p></a>
+                            <a href="#servicios" class="nav-item nav-link"><img class="img-iconos1" src="img/servicios.png" alt="Imagen 1"> <p class="d-none d-lg-inline-flex">Servicios</p></a>
+                            <a href="#portafolio" class="nav-item nav-link"> <img class="img-iconos1" src="img/portafolio.png" alt="Imagen 1"><p class="d-none d-lg-inline-flex"> Portafolio</p></a>
+                            <a href="#mimarca" class="nav-item nav-link"> <img class="img-iconos1" src="img/mimarca.png" alt="Imagen 1"><p class="d-none d-lg-inline-flex"> Mi Marca</p></a>
+                            <a href="#contactos" class="nav-item nav-link"><img class="img-iconos1" src="img/contactos.png" alt="Imagen 1"><p class="d-none d-lg-inline-flex"> Contacto</p></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Navbar End -->
+
+
+            <!-- Inicio  -->
+
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div id="home" class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="1000">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenido!</h3>
+                        <h6>Soy</h6>
+                        <h6>Felipe Pulido</h6>
+                      <p>Diseño Gráfico , Diseño Web, Fotografía , Contenido Multimedia , Ilustración , Audiovisual , Creación de contenido .</p>
+                    </div>
+                    
+                    <img src="img/carrusel-1.png" class="img-carrusel d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="1000">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenido!</h3>
+                        <h6>Soy</h6>
+                        <h6>Felipe Pulido</h6>
+                      <p>Diseño Gráfico , Diseño Web, Fotografía , Contenido Multimedia , Ilustración , Audiovisual , Creación de contenido .</p>
+                    </div>
+                    <img src="img/carrusel-1.png" class="img-carrusel d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="1000">
+                    <div class="carousel-caption">
+                        <h3>¡Bienvenido!</h3>
+                        <h6>Soy</h6>
+                        <h6>Felipe Pulido</h6>
+                      <p>Diseño Gráfico , Diseño Web, Fotografía , Contenido Multimedia , Ilustración , Audiovisual , Creación de contenido .</p>
+                    </div>
+                    <img src="img/carrusel-1.png" class="img-carrusel d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Inicio Acerca de mi  -->
+
+	        <div id="acercademi" class="container-fluid pt-4 px-4">
+                <div class="row g-4 ">
+                    <div class="col-sm-12 col-xl-12 ">
+                        <div class=" text-center rounded p-4 center-content ">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <img class="img-iconos2" src="img/hr-title.png" alt="">
+                                <h6 class="mb-0 text-01 edit-cuadro"> Acerca de mi </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-4 ">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="mb-0 text-01">Experiencia <hr class="blue-hr"></h6> 
+                                </div>
+                            </div>
+                            <div>
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <img class="img-iconos3" src="img/diseño-01.png" alt="Imagen 1">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p> Diseño Gráfico</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            Diseño gráfico <cite title="Source Title">Creación de contenido e ilustración</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <img class="img-iconos3" src="img/diseño-02.png" alt="Imagen 1">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p> Diseño Web</p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            Diseño web,  <cite title="Source Title">interacción UI/UX para el usuario.</cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <img class="img-iconos3" src="img/diseño-03.png" alt="Imagen 1">
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p> Fotografía </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            Fotografías con <cite title="Source Title">  impacto visual, técnica y creatividad. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-4 animate-on-scroll">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="mb-0 text-01">Acerca de mi <hr class="blue-hr"></h6> 
+                                </div>
+                            </div>
+                            <div>
+                                <div class="image-container">
+                                    <img src="img/perfil.png" alt="Imagen" class=" animated-image image-container">
+                                </div>
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <figure>
+                                        <blockquote class="blockquote">
+                                            <p>Acerca de mi.</p> 
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            Soy un creativo y apasionado en el área de diseño gráfico / web y producción multimedia el cual disfruto creando y diseñando todo tipo de ideas para ti.
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                
+                            </div>
+                            <div class="  rounded p-4 pb-0 mb-4 center-images">
+                                <a href="xxx"><div class="center-images animated-image1">
+                                    <img class="img-iconos1" src="img/whatsapp.png" alt="Imagen 1">
+                                </div></a>
+                                <a href="xxx"><div class="center-images animated-image1">
+                                    <img class="img-iconos1" src="img/instagram.png" alt="Imagen 1">
+                                </div></a>
+                                <a href="xxx"><div class="center-images animated-image1">
+                                    <img class="img-iconos1" src="img/facebook.png" alt="Imagen 1">
+                                </div></a>
+                                <a href="xxx"><div class="center-images animated-image1">
+                                    <img class="img-iconos1" src="img/pinterest.png" alt="Imagen 1">
+                                </div></a>
+                                <a href="xxx"><div class="center-images animated-image1">
+                                    <img class="img-iconos1" src="img/linkedin.png" alt="Imagen 1">
+                                </div></a>
+                                <a href="xxx"><div class="center-images animated-image1">
+                                    <img class="img-iconos1" src="img/behance.png" alt="Imagen 1">
+                                </div></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-4 animate-on-scroll">
+                        <div class="bg-secondary text-center rounded p-4">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <h6 class="mb-0 text-01">Info Personal <hr class="blue-hr"> </h6>
+                                </div>
+                            </div>
+                            <div class="border rounded p-4 pb-0 mb-4"> 
+                                <div class="  rounded p-4 pb-0 mb-4 ">
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/nacimiento.png" alt="Imagen 1"> <cite title="Source Title">Nacimiento: 13/07/2000 </cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/celular.png" alt="Imagen 1"> <cite title="Source Title">Phone: +57 3203662953</cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/correo.png" alt="Imagen 1"> <cite title="Source Title">Email: desing.grafiz@gmail.com</cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/instagram.png" alt="Imagen 1"> <cite title="Source Title">Instagram: Grafi_z</cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/facebook.png" alt="Imagen 1"> <cite title="Source Title">Facebook: Grafiz</cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/whatsapp.png" alt="Imagen 1"> <cite title="Source Title">Whatsapp: +57 3227676278</cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/pinterest.png" alt="Imagen 1"> <cite title="Source Title">Pinterest: Grafiz</cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/linkedin.png" alt="Imagen 1"> <cite title="Source Title">Linkedin: Grafiz </cite>
+                                    </div> <br>
+                                    <div class="skill-name3">
+                                        <img class="img-iconos2" src="img/behance.png" alt="Imagen 1"> <cite title="Source Title">Behance: Grafiz</cite>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- SKILLS  -->
+
+                    <div id="skills" class="col-sm-12 col-xl-12">
+                        <div class=" text-center rounded p-4 center-content">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <img class="img-iconos2" src="img/hr-title.png" alt="">
+                                <h6 class="mb-0 text-01 edit-cuadro"> Skills</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4">
+
+                            <div class="container">
+                                <img class="img-iconos" src="img/Adobe-ilustrator.png" alt="">
+                                <div class="skill-name"> Adobe Illustrator</div>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-1" style="--progress-width:85%;">
+                                    85%
+                                    </div>
+                                </div>
+                                <br>
+                                <img class="img-iconos" src="img/Adobe-photoshop.png" alt="">
+                                <div class="skill-name"> Adobe Photoshp</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-2" style="--progress-width:80%;">
+                                    80%
+                                    </div>
+                                </div>
+                                <br>
+                                <img class="img-iconos" src="img/Adobe-premier.png" alt="">
+                                <div class="skill-name"> Adobe Premier</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-3" style="--progress-width:60%;">
+                                    60%
+                                    </div>
+                                </div>
+                                <br>
+                                <img class="img-iconos" src="img/Adobe-aftereffect.png" alt="">
+                                <div class="skill-name"> Adobe After Effect</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-4" style="--progress-width:60%;">
+                                    60%
+                                    </div>
+                                </div>
+                                <br>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-6">
+                        <div class="bg-secondary text-center rounded p-4">
+
+                            <div class="container">
+
+                                <img class="img-iconos" src="img/Adobe-aftereffect.png" alt="">
+                                <div class="skill-name"> Adobe After Effect</div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-4" style="--progress-width:60%;">
+                                    60%
+                                    </div>
+                                </div>
+                                <br>
+                                
+                                <img class="img-iconos" src="img/Adobe-indesign.png" alt="">
+                                <div class="skill-name"> Adobe Indesign </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-5" style="--progress-width:80%;">
+                                    80%
+                                    </div>
+                                </div>
+                                <br>
+                                <img class="img-iconos" src="img/Adobe-xd.png" alt="">
+                                <div class="skill-name"> Adobe XD </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-5" style="--progress-width:85%;">
+                                    85%
+                                    </div>
+                                </div>
+                                <br>
+                                <img class="img-iconos" src="img/Adobe-Animate.png" alt="">
+                                <div class="skill-name"> Adobe Animate </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-6" style="--progress-width:50%;">
+                                    50%
+                                    </div>
+                                </div>
+                                <br>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- SERVICIOS  -->
+
+            <div id="servicios" class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+
+                    <div class="col-sm-12 col-xl-12">
+                        <div class=" text-center rounded p-4 center-content">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <img class="img-iconos2" src="img/hr-title.png" alt="">
+                                <h6 class="mb-0 text-01 edit-cuadro"> Servicios </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-1.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Diseño Gráfico </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                             <cite title="Source Title"> Realizo conceptos en imágenes poderosas y estéticamente impactantes. Con habilidad técnica gráfica y creatividad, transformo ideas en piezas visuales memorables , originales , creativas y efectivas. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-2.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Diseño Web </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title"> Construyo experiencias digitales cautivadoras y funcionales. Fusiono diseño y tecnología para crear sitios web que también ofrecen una navegación intuitiva y una experiencia de usuario excepcional. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-3.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Ilustración </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                        <cite title="Source Title">  Domino el arte de la ilustración, donde cada trazo cobra vida y cuenta una historia. Con imaginación y destreza, creo imágenes que inspiran, emocionan y dan forma a universos imaginarios llenos de color y magia. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-7.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Animación </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title"> Exploro y realizo el arte de la animación, he dado vida a mundos imaginarios y personajes entrañables como de fantasia . Cada fotograma es una ventana a la creatividad, donde la técnica y la pasión que trascienden. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-4.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Fotografía </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title"> Capturo la esencia de cada momento, a encontrar la belleza en lo cotidiano y a transmitir emociones a través de mis imágenes. Desde retratos profesionales hasta paisajes increibles y excepcionales </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-5.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Creación de contenido </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title"> A través de las redes sociales, comparto contenido inspirador y cautivador para conectar con mi audiencia y generar conversaciones , audiencia e interacciones significativas. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-6.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Audiovisual </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                         <cite title="Source Title"> Construyo con pasión y creatividad, he explorado cada aspecto de la creación audiovisual. Desde proyectos pequeños hasta producciones de envergadura, cada fotograma cuenta una historia única. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-8.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Branding </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                           <cite title="Source Title"> Construyo identidades visuales que trascienden. Desde logotipos hasta estrategias de marca, cada elemento comunica la esencia de la marca. Mi viaje es una exploración creativa que deja una huella en cada diseño. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-4">
+                        <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
+                            <div class="ms-3">
+                                <div class="border rounded p-4 pb-0 mb-4">
+                                    <div class="image-container">
+                                        <img src="img/card-9.png" alt="Imagen" class=" animated-image image-container">
+                                    </div>
+                                    <figure class="text-center">
+                                        <blockquote class="blockquote">
+                                            <p><img class="img-iconos2" src="img/hr-title.png" alt=""> Marketing </p>
+                                        </blockquote>
+                                        <figcaption class="blockquote-footer">
+                                            <cite title="Source Title">Utilizo herramientas en línea para la planificación y ejecución de campañas en redes sociales, motores de búsqueda y otros canales digitales, utilizando análisis de datos para optimizar el rendimiento. </cite>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--    PORTAFOLIO    -->
+
+            <div id="portafolio" class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class=" text-center rounded p-4 center-content">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <img class="img-iconos2" src="img/hr-title.png" alt="">
+                                <h6 class="mb-0 text-01 edit-cuadro"> Portafolio </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------------------->
+                    <div class="options">
+                        <button onclick="showAll()">Todos los Elementos</button>
+                    </div>
+                    <div class="options">
+                        <button onclick="filterImages('diseño')">Diseño</button>
+                        <button onclick="filterImages('web')">Web</button>
+                        <button onclick="filterImages('logo')">Logos</button>
+                        <button onclick="filterImages('branding')">Branding</button>
+                        <button onclick="filterImages('ilustracion')">ilustración</button>
+                    </div>
+
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 gallery">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-01.png" alt="Imagen 1" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/web-01.png" alt="Imagen 2" data-category="web" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-01.png" alt="Imagen 3" data-category="diseño" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-05.jpg" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/ilustracion-01.png" alt="Imagen 1" data-category="ilustracion" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-02.png" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/branding-01.jpg" alt="Imagen 3" data-category="branding" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/branding-02.jpg" alt="Imagen 3" data-category="branding" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-02.png" alt="Imagen" data-category="diseño" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-07.png" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-04.png" alt="Imagen" data-category="diseño" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-03.png" alt="Imagen 1" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-06.jpg" alt="Imagen 3" data-category="branding" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-08.png" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-04.png" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-07.jpg" alt="Imagen" data-category="diseño" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/branding-04.png" alt="Imagen 3" data-category="branding" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-08.jpg" alt="Imagen" data-category="diseño" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-05.png" alt="Imagen 1" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-10.png" alt="Imagen 2" data-category="diseño" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-11.jpg" alt="Imagen 3" data-category="branding" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-06.jpg" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/cont-3.png" alt="Imagen" data-category="diseño" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-09.png" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/logo-10.png" alt="Imagen" data-category="logo" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/web-02.png" alt="Imagen 2" data-category="web" onclick="showImage(this)">
+                        <img class="img-iconos2 animated-image image-container" src="img/branding-03.jpg" alt="Imagen 3" data-category="branding" onclick="showImage(this)">
+                    </div>
+
+                    <div id="modal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <img id="modalImage" class="modal-content">
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                    <!------------------------------------------------------------->
+                </div>
+            </div>
+
+            <!--    GRAFIZ   -->
+
+            <div id="mimarca" class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+
+                    <div class="col-sm-12 col-xl-12">
+                        <div class="bg-secondary text-center rounded p-4 center-content">
+                            <div class="d-flex align-items-center justify-content-between mb-4">
+                                <img class="img-iconos2" src="img/hr-title.png" alt="">
+                                <h6 class="mb-0 text-01 edit-cuadro"> Mi marca </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                        <div class="grafiz" id="home">
+                            <div class="container-fluid ">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-12 col-md-6 col-12">
+                                        <div class="hero-content">
+                                            <div class="hero-text"><br><br><br>
+                                                <p>Grafiz Design en mi marca personal el cual ofrece el servicio
+                                                    de creación de marca , Creación de logo , Creación de piezas
+                                                    gráficas , Branding , Identidad de marca , Folletos , Desarrollo
+                                                    de páginas Web , Mockups , Branding , Manejo de redes sociales e
+                                                    Ilustraciones , demuestro habilidades en la 
+                                                    traducción de ideas creativas en soluciones visuales efectivas.
+                                                </p>
+                                            </div>
+                                            <div class="hero-btn">
+                                                <img class="img-iconos3" src="img/icono.png" alt="Imagen 1">
+                                            </div>
+                                            <div class="hero-btn">
+                                                <a class="btn" href="">Portafolio</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-----------------------    Footer    --------------->
+
+            <div id="contactos" class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+
+
+                    <div class=" container my-5">
+
+                        <footer class="contactos text-white text-center text-lg-start bg-primary"> 
+                            <div class="footer col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class=" text-center rounded p-4 center-content">
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <img class="img-iconos2" src="img/hr-title.png" alt="">
+                                        <h6 class="mb-0 text-01 edit-cuadro"> Contactanos </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="footer1 container p-4">
+                          <div class="row mt-4">
+                            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                              <h5 class="text-uppercase mb-4"> Mi Portafolio</h5>
+                              <p>
+                                Sumérgete en mi portafolio y descubre el fascinante universo del diseño gráfico y web. Cada proyecto es una manifestación de creatividad, innovación y pasión por el arte visual, esperando ser descubierto por ti
+                              </p>
+                              <div class="mt-4">
+                                <div class="  rounded p-4 pb-0 mb-4 center-images">
+                                    <a href="xxx"><div class="center-images animated-image1">
+                                        <img class="img-iconos1" src="img/whatsapp.png" alt="Imagen 1">
+                                    </div></a>
+                                    <a href="xxx"><div class="center-images animated-image1">
+                                        <img class="img-iconos1" src="img/instagram.png" alt="Imagen 1">
+                                    </div></a>
+                                    <a href="xxx"><div class="center-images animated-image1">
+                                        <img class="img-iconos1" src="img/facebook.png" alt="Imagen 1">
+                                    </div></a>
+                                    <a href="xxx"><div class="center-images animated-image1">
+                                        <img class="img-iconos1" src="img/pinterest.png" alt="Imagen 1">
+                                    </div></a>
+                                    <a href="xxx"><div class="center-images animated-image1">
+                                        <img class="img-iconos1" src="img/linkedin.png" alt="Imagen 1">
+                                    </div></a>
+                                    <a href="xxx"><div class="center-images animated-image1">
+                                        <img class="img-iconos1" src="img/behance.png" alt="Imagen 1">
+                                    </div></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="footer1 col-lg-4 col-md-6 mb-4 mb-md-0">
+                              <h5 class="text-uppercase mb-4 pb-1">¡Contactanos!</h5>
+                      
+                              <ul class="fa-ul" style="margin-left: 1.65em;">
+                                <div class="skill-name3">
+                                    <img class="img-iconos2" src="img/ubicacion.png" alt="Imagen 1"> <cite title="Source Title">Bogotá , Colombia </cite>
+                                </div> <br>
+                                <div class="skill-name3">
+                                    <img class="img-iconos2" src="img/celular.png" alt="Imagen 1"> <cite title="Source Title">Phone: +57 3203662953</cite>
+                                </div> <br>
+                                <div class="skill-name3">
+                                    <img class="img-iconos2" src="img/correo.png" alt="Imagen 1"> <cite title="Source Title">Email: desing.grafiz@gmail.com</cite>
+                                </div> <br>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                              <h5 class="text-uppercase mb-4">Servicios</h5>
+                      
+                              <table class="table text-center text-white">
+                                <tbody class="font-weight-normal">
+                                  <tr>
+                                    <td>Diseño Gráfico</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Diseño Web</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Fotografía</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Ilustración</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Animación</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Creación de contenido</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Audiovisual</td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="footer text-center p-3">
+                          © 2024 :
+                          <a class="text-white" href="index.html">Mi Portafolio / Felipe Pulido / Grafiz</a>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Boton salto -->
+        <a href="#" class="btn btn-lg  btn-lg-square back-to-top"><img class="img-iconos4" src="img/arrow.png" alt="Imagen 1"></a>
+        
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
